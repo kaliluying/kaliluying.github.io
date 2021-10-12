@@ -6,17 +6,28 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://kaliluying.github.io">
-  <title>Tag: 娱乐 | GML的博客</title>
+  <title>程序员怎样买东西呢---selenium爬取淘宝数据 | GML的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="萌新小白一枚">
-<meta property="og:type" content="website">
-<meta property="og:title" content="GML的博客">
-<meta property="og:url" content="https://kaliluying.github.io/tags/%E5%A8%B1%E4%B9%90/index.html">
+  <meta name="description" content="江山代有才人出,各领风骚数百年 ​                                                        ——清·赵翼 《论诗五首·其二》 长江后浪推前浪，浮事新人换旧人 ​                                                         ——宋·刘斧《青琐高议》  东西用时间长了就该换新的了，特别是手机，这">
+<meta property="og:type" content="article">
+<meta property="og:title" content="程序员怎样买东西呢---selenium爬取淘宝数据">
+<meta property="og:url" content="https://kaliluying.github.io/2021/10/12/%E7%A8%8B%E5%BA%8F%E5%91%98%E6%80%8E%E6%A0%B7%E4%B9%B0%E4%B8%9C%E8%A5%BF%E5%91%A2-selenium%E7%88%AC%E5%8F%96%E6%B7%98%E5%AE%9D%E6%95%B0%E6%8D%AE/index.html">
 <meta property="og:site_name" content="GML的博客">
-<meta property="og:description" content="萌新小白一枚">
+<meta property="og:description" content="江山代有才人出,各领风骚数百年 ​                                                        ——清·赵翼 《论诗五首·其二》 长江后浪推前浪，浮事新人换旧人 ​                                                         ——宋·刘斧《青琐高议》  东西用时间长了就该换新的了，特别是手机，这">
 <meta property="og:locale" content="zh_CH">
+<meta property="og:image" content="https://kaliluying.github.io/2021/10/12/%E7%A8%8B%E5%BA%8F%E5%91%98%E6%80%8E%E6%A0%B7%E4%B9%B0%E4%B8%9C%E8%A5%BF%E5%91%A2-selenium%E7%88%AC%E5%8F%96%E6%B7%98%E5%AE%9D%E6%95%B0%E6%8D%AE/1.png">
+<meta property="og:image" content="https://kaliluying.github.io/2021/10/12/%E7%A8%8B%E5%BA%8F%E5%91%98%E6%80%8E%E6%A0%B7%E4%B9%B0%E4%B8%9C%E8%A5%BF%E5%91%A2-selenium%E7%88%AC%E5%8F%96%E6%B7%98%E5%AE%9D%E6%95%B0%E6%8D%AE/2.png">
+<meta property="og:image" content="https://kaliluying.github.io/2021/10/12/%E7%A8%8B%E5%BA%8F%E5%91%98%E6%80%8E%E6%A0%B7%E4%B9%B0%E4%B8%9C%E8%A5%BF%E5%91%A2-selenium%E7%88%AC%E5%8F%96%E6%B7%98%E5%AE%9D%E6%95%B0%E6%8D%AE/3.png">
+<meta property="og:image" content="https://kaliluying.github.io/2021/10/12/%E7%A8%8B%E5%BA%8F%E5%91%98%E6%80%8E%E6%A0%B7%E4%B9%B0%E4%B8%9C%E8%A5%BF%E5%91%A2-selenium%E7%88%AC%E5%8F%96%E6%B7%98%E5%AE%9D%E6%95%B0%E6%8D%AE/4.png">
+<meta property="og:image" content="https://kaliluying.github.io/2021/10/12/%E7%A8%8B%E5%BA%8F%E5%91%98%E6%80%8E%E6%A0%B7%E4%B9%B0%E4%B8%9C%E8%A5%BF%E5%91%A2-selenium%E7%88%AC%E5%8F%96%E6%B7%98%E5%AE%9D%E6%95%B0%E6%8D%AE/5.png">
+<meta property="og:image" content="https://kaliluying.github.io/2021/10/12/%E7%A8%8B%E5%BA%8F%E5%91%98%E6%80%8E%E6%A0%B7%E4%B9%B0%E4%B8%9C%E8%A5%BF%E5%91%A2-selenium%E7%88%AC%E5%8F%96%E6%B7%98%E5%AE%9D%E6%95%B0%E6%8D%AE/7.png">
+<meta property="og:image" content="https://kaliluying.github.io/2021/10/12/%E7%A8%8B%E5%BA%8F%E5%91%98%E6%80%8E%E6%A0%B7%E4%B9%B0%E4%B8%9C%E8%A5%BF%E5%91%A2-selenium%E7%88%AC%E5%8F%96%E6%B7%98%E5%AE%9D%E6%95%B0%E6%8D%AE/8.png">
+<meta property="article:published_time" content="2021-10-12T10:40:51.000Z">
+<meta property="article:modified_time" content="2021-10-12T15:26:27.296Z">
 <meta property="article:author" content="GML">
+<meta property="article:tag" content="python 爬虫">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://kaliluying.github.io/2021/10/12/%E7%A8%8B%E5%BA%8F%E5%91%98%E6%80%8E%E6%A0%B7%E4%B9%B0%E4%B8%9C%E8%A5%BF%E5%91%A2-selenium%E7%88%AC%E5%8F%96%E6%B7%98%E5%AE%9D%E6%95%B0%E6%8D%AE/1.png">
   
     <link rel="alternative" href="/atom.xml" title="GML的博客" type="application/atom+xml">
   
@@ -169,98 +180,235 @@
                                 <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
                             </div>
                             <div id="js-content" class="content-ll">
-                                
-  
-  
+                                <article id="post-程序员怎样买东西呢-selenium爬取淘宝数据" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2021" class="archive-year">2021</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/09/21/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/" class="archive-article-date">
-  	<time datetime="2021-09-21T11:37:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-09-21</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/09/21/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/">3D旋转照片墙</a>
+    <h1 class="article-title" itemprop="name">
+      程序员怎样买东西呢---selenium爬取淘宝数据
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2021/10/12/%E7%A8%8B%E5%BA%8F%E5%91%98%E6%80%8E%E6%A0%B7%E4%B9%B0%E4%B8%9C%E8%A5%BF%E5%91%A2-selenium%E7%88%AC%E5%8F%96%E6%B7%98%E5%AE%9D%E6%95%B0%E6%8D%AE/" class="archive-article-date">
+  	<time datetime="2021-10-12T10:40:51.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-10-12</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>江山代有才人出,各领风骚数百年</p>
+<p>​                                                        ——清·赵翼 《论诗五首·其二》</p>
+<p>长江后浪推前浪，浮事新人换旧人</p>
+<p>​                                                         ——宋·刘斧《青琐高议》</p>
+</blockquote>
+<p>东西用时间长了就该换新的了，特别是手机，这几年发展太快，APP是越来越大，内存是越来越不够用了，想要换新的手机，但不知道换什么，那今天就爬一下淘宝，看一下淘宝手机的数据，参考一下</p>
+<span id="more"></span>
+
+<p>我的开发环境:python3.8<br>计算机系统:Windows10<br>开发工具:pycharm<br>要用的包:selenium、csv、time<br>网址:<a target="_blank" rel="noopener" href="https://www.taobao.com/">https://www.taobao.com/</a><br>今天用的是自动化测试工具selenium，没有这个包的同学可以用pip install selenium 来安装<br>安装完之后还需要安装个浏览器驱动，我用的是谷歌浏览器</p>
+<p><a target="_blank" rel="noopener" href="http://chromedriver.storage.googleapis.com/index.html">http://chromedriver.storage.googleapis.com/index.html</a><br>打开这个链接，找到你浏览器版本所对应的驱动，这是我的浏览器版本</p>
+<p><img src="/2021/10/12/%E7%A8%8B%E5%BA%8F%E5%91%98%E6%80%8E%E6%A0%B7%E4%B9%B0%E4%B8%9C%E8%A5%BF%E5%91%A2-selenium%E7%88%AC%E5%8F%96%E6%B7%98%E5%AE%9D%E6%95%B0%E6%8D%AE/1.png"></p>
+<p>可以看到我的版本是94.0.4606.81 没有找到一样的就找低一个版本的</p>
+<p><img src="/2021/10/12/%E7%A8%8B%E5%BA%8F%E5%91%98%E6%80%8E%E6%A0%B7%E4%B9%B0%E4%B8%9C%E8%A5%BF%E5%91%A2-selenium%E7%88%AC%E5%8F%96%E6%B7%98%E5%AE%9D%E6%95%B0%E6%8D%AE/2.png"></p>
+<p>选择对应的系统，我的是win系统</p>
+<p><img src="/2021/10/12/%E7%A8%8B%E5%BA%8F%E5%91%98%E6%80%8E%E6%A0%B7%E4%B9%B0%E4%B8%9C%E8%A5%BF%E5%91%A2-selenium%E7%88%AC%E5%8F%96%E6%B7%98%E5%AE%9D%E6%95%B0%E6%8D%AE/3.png"></p>
+<p>把下载的压缩文件解压后，放到python解释器的当前文件夹下</p>
+<p><img src="/2021/10/12/%E7%A8%8B%E5%BA%8F%E5%91%98%E6%80%8E%E6%A0%B7%E4%B9%B0%E4%B8%9C%E8%A5%BF%E5%91%A2-selenium%E7%88%AC%E5%8F%96%E6%B7%98%E5%AE%9D%E6%95%B0%E6%8D%AE/4.png"></p>
+<p>验证一下</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> selenium.webdriver <span class="keyword">import</span> Chrome</span><br><span class="line"></span><br><span class="line">web = Chrome()</span><br><span class="line">web.get(<span class="string">&#x27;https://www.baidu.com&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>如果正常出现网页就成功了，注意，一定要和你的版本相匹配，不然就会出现这样</p>
+<p><img src="/2021/10/12/%E7%A8%8B%E5%BA%8F%E5%91%98%E6%80%8E%E6%A0%B7%E4%B9%B0%E4%B8%9C%E8%A5%BF%E5%91%A2-selenium%E7%88%AC%E5%8F%96%E6%B7%98%E5%AE%9D%E6%95%B0%E6%8D%AE/5.png"></p>
+<p>这个是我把浏览器更新之后驱动版本太低不支持了</p>
+<p>至于其他浏览器在这里就不做太多的叙述了，流程大体相同，至于网站可以在网上找一下，下面进入正题</p>
+<p>selenium是模拟人正常在浏览器上的操作，正常我们打开网页在搜索框输入内容点击搜索</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">import</span> csv</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver <span class="keyword">import</span> Chrome</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span>():</span></span><br><span class="line">    win.get(<span class="string">&#x27;https://www.taobao.com/&#x27;</span>)</span><br><span class="line">    win.find_element_by_xpath(<span class="string">&#x27;//*[@id=&quot;q&quot;]&#x27;</span>).send_keys(commodity)      <span class="comment"># 点击搜索框，输入前面想要搜索的内容</span></span><br><span class="line">    win.find_element_by_xpath(<span class="string">&#x27;//*[@id=&quot;J_TSearchForm&quot;]/div[1]/button&#x27;</span>).click()     <span class="comment"># 点击搜索按钮</span></span><br><span class="line">    win.maximize_window()       <span class="comment"># 将网页放大方便我们扫码登录</span></span><br><span class="line">    time.sleep(<span class="number">15</span>)              <span class="comment"># 等待15秒 让我们有时间扫码</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    commodity = <span class="built_in">input</span>(<span class="string">&#x27;想要查询的商品：&#x27;</span>)</span><br><span class="line">    win = Chrome()</span><br><span class="line">    main()</span><br></pre></td></tr></table></figure>
+
+<p>这里需要我们扫码登录才让我们搜索</p>
+<p>我们在分析一下搜索界面，发现所有的商品数据都放在div标签里，可以看到不是所有的div里都有商品数据，是从第四个div开始有数据，这些div都有共同的特征，那就是属性都是一样的，可以用xpath通过class定位进行晒选</p>
+<p><img src="/2021/10/12/%E7%A8%8B%E5%BA%8F%E5%91%98%E6%80%8E%E6%A0%B7%E4%B9%B0%E4%B8%9C%E8%A5%BF%E5%91%A2-selenium%E7%88%AC%E5%8F%96%E6%B7%98%E5%AE%9D%E6%95%B0%E6%8D%AE/7.png"></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">items = win.find_elements_by_xpath(<span class="string">&#x27;//div[@class=&quot;items&quot;]/div[@class=&quot;item J_MouserOnverReq  &quot;]&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>这里需要注意一点因为我们选取了许多个div，所以find_elements_by_xpath里的element一定要加s，这样才返回列表，前面选取搜索框和搜索按钮的时候是不加s的</p>
+<p>将获取的div遍历取出我们想要数据</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> item <span class="keyword">in</span> items:</span><br><span class="line">    <span class="comment"># 旗舰店</span></span><br><span class="line">    store = item.find_element_by_xpath(<span class="string">&#x27;.//div[@class=&quot;shop&quot;]/a&#x27;</span>).text</span><br><span class="line">    <span class="comment"># 商品简述</span></span><br><span class="line">    desc = item.find_element_by_xpath(<span class="string">&#x27;./div[2]/div[2]/a&#x27;</span>).text</span><br><span class="line">    <span class="comment"># 价格</span></span><br><span class="line">    price = item.find_element_by_xpath(<span class="string">&#x27;./div[2]/div/div/strong&#x27;</span>).text</span><br><span class="line">    <span class="comment"># 人数</span></span><br><span class="line">    num = item.find_element_by_xpath(<span class="string">&#x27;.//div[@class=&quot;deal-cnt&quot;]&#x27;</span>).text</span><br><span class="line">    <span class="comment"># 地址</span></span><br><span class="line">    address = item.find_element_by_xpath(<span class="string">&#x27;.//div[@class=&quot;location&quot;]&#x27;</span>).text</span><br></pre></td></tr></table></figure>
+
+<p>再将获取的数据存储到以搜索名称命名的csv文件中</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">f&#x27;<span class="subst">&#123;commodity&#125;</span>.csv&#x27;</span>, mode=<span class="string">&#x27;a&#x27;</span>, newline=<span class="string">&#x27;&#x27;</span>, encoding=<span class="string">&#x27;utf-8-sig&#x27;</span>)<span class="keyword">as</span> f:</span><br><span class="line">    csv_writ = csv.writer(f, delimiter=<span class="string">&#x27;,&#x27;</span>)</span><br><span class="line">    csv_writ.writerow([store, desc, price, num, address])</span><br></pre></td></tr></table></figure>
+
+<p>附上结果</p>
+<p><img src="/2021/10/12/%E7%A8%8B%E5%BA%8F%E5%91%98%E6%80%8E%E6%A0%B7%E4%B9%B0%E4%B8%9C%E8%A5%BF%E5%91%A2-selenium%E7%88%AC%E5%8F%96%E6%B7%98%E5%AE%9D%E6%95%B0%E6%8D%AE/8.png"></p>
+<p>这次先这样下次再将获取到的数据进行可视化生成柱状图、饼状图及地图分布</p>
+<p>全部代码如下</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">import time</span><br><span class="line">import csv</span><br><span class="line">from selenium.webdriver import Chrome</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def get_data():</span><br><span class="line">    items = win.find_elements_by_xpath(&#x27;//div[@class=&quot;items&quot;]/div[@class=&quot;item J_MouserOnverReq  &quot;]&#x27;)</span><br><span class="line">    for item in items:</span><br><span class="line">        # 旗舰店</span><br><span class="line">        store = item.find_element_by_xpath(&#x27;.//div[@class=&quot;shop&quot;]/a&#x27;).text</span><br><span class="line">        # 商品简述</span><br><span class="line">        desc = item.find_element_by_xpath(&#x27;./div[2]/div[2]/a&#x27;).text</span><br><span class="line">        # 价格</span><br><span class="line">        price = item.find_element_by_xpath(&#x27;./div[2]/div/div/strong&#x27;).text</span><br><span class="line">        # 人数</span><br><span class="line">        num = item.find_element_by_xpath(&#x27;.//div[@class=&quot;deal-cnt&quot;]&#x27;).text</span><br><span class="line">        # 地址</span><br><span class="line">        address = item.find_element_by_xpath(&#x27;.//div[@class=&quot;location&quot;]&#x27;).text</span><br><span class="line">        with open(f&#x27;&#123;commodity&#125;.csv&#x27;, mode=&#x27;a&#x27;, newline=&#x27;&#x27;, encoding=&#x27;utf-8-sig&#x27;)as f:</span><br><span class="line">            csv_writ = csv.writer(f, delimiter=&#x27;,&#x27;)</span><br><span class="line">            csv_writ.writerow([store, desc, price, num, address])</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def main():</span><br><span class="line">    win.get(&#x27;https://www.taobao.com/&#x27;)</span><br><span class="line">    win.find_element_by_xpath(&#x27;//*[@id=&quot;q&quot;]&#x27;).send_keys(commodity)      # 点击搜索框，输入前面想要搜索的内容</span><br><span class="line">    win.find_element_by_xpath(&#x27;//*[@id=&quot;J_TSearchForm&quot;]/div[1]/button&#x27;).click()     # 点击搜索按钮</span><br><span class="line">    win.maximize_window()       # 将网页放大方便我们扫码登录</span><br><span class="line">    time.sleep(15)              # 等待15秒 让我们有时间扫码</span><br><span class="line">    get_data()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">if __name__ == &#x27;__main__&#x27;:</span><br><span class="line">    commodity = input(&#x27;想要查询的商品：&#x27;)</span><br><span class="line">    win = Chrome()</span><br><span class="line">    main()</span><br></pre></td></tr></table></figure>
+
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/alipay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/weixin.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">娱乐</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">python 爬虫</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=https://kaliluying.github.io/2021/10/12/%E7%A8%8B%E5%BA%8F%E5%91%98%E6%80%8E%E6%A0%B7%E4%B9%B0%E4%B8%9C%E8%A5%BF%E5%91%A2-selenium%E7%88%AC%E5%8F%96%E6%B7%98%E5%AE%9D%E6%95%B0%E6%8D%AE/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/09/21/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2-%E5%88%AE%E5%88%AE%E4%B9%90/" class="archive-article-date">
-  	<time datetime="2021-09-21T11:37:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-09-21</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2021/10/04/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E5%BF%AB%E4%B9%90-%E7%94%A8python%E7%88%AC%E5%8F%96%E5%BD%BC%E5%B2%B8%E7%BD%91%E7%BE%8E%E5%A5%B3%E5%9B%BE%E7%89%87/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">程序员的快乐-用python爬取彼岸网美女图片</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/09/21/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2-%E5%88%AE%E5%88%AE%E4%B9%90/">刮刮乐</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">娱乐</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    目录，不存在的…
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
   
-    </div></section>
   
 
-    
+  
+
+  
+
+  
 
 
                             </div>
@@ -314,9 +462,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
