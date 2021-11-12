@@ -8,16 +8,16 @@
   <link rel="dns-prefetch" href="https://kaliluying.github.io">
   <title>对B站视频爬取下载，并组合成完整的视频 | GML的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="平时没事的时候除了刷抖音还喜欢逛B站，但在B站看见有趣的视频时候想要下载下来，却发现没有下载的按钮，人生是一个发现困难并且解决困难的过程，既然你不让我下，那我就非得下，爬虫可见及可爬，那我就用爬虫给你爬下来， 有请受害者B站排行榜舞蹈区排名第一：https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV1c341187m9 先分析一波：打开检查抓一下包，因为视频是异步加载的所以抓xhr的数">
+  <meta name="description" content="平时没事的时候除了刷抖音还喜欢逛B站，但在B站看见有趣的视频时候想要下载下来，却发现没有下载的按钮，人生是一个发现困难并且解决困难的过程，既然你不让我下，那我就非得下，爬虫可见及可爬，那我就用爬虫给你爬下来，">
 <meta property="og:type" content="article">
 <meta property="og:title" content="对B站视频爬取下载，并组合成完整的视频">
 <meta property="og:url" content="https://kaliluying.github.io/2021/11/12/%E5%AF%B9B%E7%AB%99%E8%A7%86%E9%A2%91%E7%88%AC%E5%8F%96%E4%B8%8B%E8%BD%BD%EF%BC%8C%E5%B9%B6%E7%BB%84%E5%90%88%E6%88%90%E5%AE%8C%E6%95%B4%E7%9A%84%E8%A7%86%E9%A2%91/index.html">
 <meta property="og:site_name" content="GML的博客">
-<meta property="og:description" content="平时没事的时候除了刷抖音还喜欢逛B站，但在B站看见有趣的视频时候想要下载下来，却发现没有下载的按钮，人生是一个发现困难并且解决困难的过程，既然你不让我下，那我就非得下，爬虫可见及可爬，那我就用爬虫给你爬下来， 有请受害者B站排行榜舞蹈区排名第一：https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV1c341187m9 先分析一波：打开检查抓一下包，因为视频是异步加载的所以抓xhr的数">
+<meta property="og:description" content="平时没事的时候除了刷抖音还喜欢逛B站，但在B站看见有趣的视频时候想要下载下来，却发现没有下载的按钮，人生是一个发现困难并且解决困难的过程，既然你不让我下，那我就非得下，爬虫可见及可爬，那我就用爬虫给你爬下来，">
 <meta property="og:locale" content="zh_CH">
 <meta property="og:image" content="https://kaliluying.github.io/2021/11/12/%E5%AF%B9B%E7%AB%99%E8%A7%86%E9%A2%91%E7%88%AC%E5%8F%96%E4%B8%8B%E8%BD%BD%EF%BC%8C%E5%B9%B6%E7%BB%84%E5%90%88%E6%88%90%E5%AE%8C%E6%95%B4%E7%9A%84%E8%A7%86%E9%A2%91/1.jpg">
 <meta property="article:published_time" content="2021-11-12T12:36:50.000Z">
-<meta property="article:modified_time" content="2021-11-12T13:25:57.138Z">
+<meta property="article:modified_time" content="2021-11-12T13:49:27.171Z">
 <meta property="article:author" content="GML">
 <meta property="article:tag" content="爬虫">
 <meta name="twitter:card" content="summary">
@@ -195,6 +195,8 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>平时没事的时候除了刷抖音还喜欢逛B站，但在B站看见有趣的视频时候想要下载下来，却发现没有下载的按钮，人生是一个发现困难并且解决困难的过程，既然你不让我下，那我就非得下，爬虫可见及可爬，那我就用爬虫给你爬下来，</p>
+<span id="more"></span>
+
 <p>有请受害者B站排行榜舞蹈区排名第一：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1c341187m9">https://www.bilibili.com/video/BV1c341187m9</a></p>
 <p>先分析一波：打开检查抓一下包，因为视频是异步加载的所以抓xhr的数据，清空数据包再将视频打开，发现多了不少数据包，但哪些是我们需要的数据呢，先看一下有什么特殊的数据，我们知道，视频是比较大的并且B站的视频是音频分离的，所以我们要找两个数据包，一个是视频一个是音频，</p>
 <p><img src="/2021/11/12/%E5%AF%B9B%E7%AB%99%E8%A7%86%E9%A2%91%E7%88%AC%E5%8F%96%E4%B8%8B%E8%BD%BD%EF%BC%8C%E5%B9%B6%E7%BB%84%E5%90%88%E6%88%90%E5%AE%8C%E6%95%B4%E7%9A%84%E8%A7%86%E9%A2%91/1.jpg"></p>
