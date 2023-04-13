@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>系统敏感信息</title>
+      <link href="/2023/04/13/%E7%B3%BB%E7%BB%9F%E6%95%8F%E6%84%9F%E4%BF%A1%E6%81%AF/"/>
+      <url>/2023/04/13/%E7%B3%BB%E7%BB%9F%E6%95%8F%E6%84%9F%E4%BF%A1%E6%81%AF/</url>
+      
+        <content type="html"><![CDATA[<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">Windows：</span><br><span class="line">   C:\boot.ini  <span class="comment">//查看系统版本</span></span><br><span class="line">   C:\Windows\System32\inetsrv\MetaBase.xml  <span class="comment">//IIS配置文件</span></span><br><span class="line">   C:\Windows\repair\sam  <span class="comment">//存储系统初次安装的密码</span></span><br><span class="line">   C:\Program Files\mysql\my.ini  <span class="comment">//Mysql配置</span></span><br><span class="line">   C:\Program Files\mysql\<span class="keyword">data</span>\mysql\user.MYD  <span class="comment">//Mysql root</span></span><br><span class="line">   C:\Windows\php.ini  <span class="comment">//php配置信息</span></span><br><span class="line">   C:\Windows\my.ini  <span class="comment">//Mysql配置信息</span></span><br><span class="line"></span><br><span class="line">Linux：</span><br><span class="line">   /root/.ssh/authorized_keys  <span class="comment">//SSH密钥对中的公钥列表</span></span><br><span class="line">   /root/.ssh/id_rsa  <span class="comment">//SSH密钥对中的私钥部分</span></span><br><span class="line">   /root/.ssh/id_ras.keystore</span><br><span class="line">   /root/.ssh/known_hosts  <span class="comment">//系统曾经连接过的 SSH 服务器主机的公钥</span></span><br><span class="line">   /etc/passwd  <span class="comment">// 账户信息</span></span><br><span class="line">   /etc/shadow  <span class="comment">// 账户密码文件</span></span><br><span class="line">   /etc/my.cnf  <span class="comment">// mysql 配置文件</span></span><br><span class="line">   /etc/httpd/conf/httpd.conf  <span class="comment">// Apache配置文件</span></span><br><span class="line">   /root/.bash_history  <span class="comment">//root用户历史命令</span></span><br><span class="line">   /root/.mysql_history  <span class="comment">//MySQL 历史命令</span></span><br><span class="line">   /proc/self/fd/fd[<span class="number">0</span>-<span class="number">9</span>]*(文件标识符)  <span class="comment">//进程的文件描述符</span></span><br><span class="line">   /proc/mounts  <span class="comment">//显示系统上挂载的文件系统的详细信息</span></span><br><span class="line">   /porc/config.gz  <span class="comment">// 是一个文件，通常在 Linux 系统中用于包含当前正在运行的内核的编译配置信息</span></span><br><span class="line">   /usr/local/app/apache2/conf/httpd.conf <span class="comment">// Apache2默认配置文件</span></span><br><span class="line">   /usr/local/app/apache2/conf/extra/httpd-vhost.conf <span class="comment">// 虚拟网站配置</span></span><br><span class="line">   /usr/local/app/php5/lib/php.ini <span class="comment">// PHP相关配置</span></span><br></pre></td></tr></table></figure><hr><p>不定时更新，就不放下载按钮了</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 安全 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>OWASP Top 10</title>
       <link href="/2023/04/13/OWASP-Top-10/"/>
       <url>/2023/04/13/OWASP-Top-10/</url>
