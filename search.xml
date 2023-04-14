@@ -4,6 +4,27 @@
   
     
     <entry>
+      <title>file-upload绕过</title>
+      <link href="/2023/04/14/file-upload%E7%BB%95%E8%BF%87/"/>
+      <url>/2023/04/14/file-upload%E7%BB%95%E8%BF%87/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://gmlblog.oss-cn-hangzhou.aliyuncs.com/img/Untitled.png" alt="Untitled"></p><h2 id="前端校验"><a href="#前端校验" class="headerlink" title="前端校验"></a>前端校验</h2><p>前段校验，狗都防不了</p><h2 id="MIME验证"><a href="#MIME验证" class="headerlink" title="MIME验证"></a>MIME验证</h2><p>使用bp抓包，修改上传的content-type为image&#x2F;png</p><h2 id="文件内容头校验"><a href="#文件内容头校验" class="headerlink" title="文件内容头校验"></a><strong>文件内容头校验</strong></h2><p>主要是检测文件内容开始处的文件幻数</p><p>（1） .JPEG;.JPE;.JPG，”JPGGraphic File”</p><p>（2） .gif，”GIF 89A”</p><p>（3） .zip，”Zip Compressed”</p><p>（4） .doc;.xls;.xlt;.ppt;.apr，”MS Compound Document v1 or Lotus Approach APRfile”</p><h2 id="分析是否为黑名单或白名单"><a href="#分析是否为黑名单或白名单" class="headerlink" title="分析是否为黑名单或白名单"></a>分析是否为黑名单或白名单</h2><p>上传的后缀名写一个不存在的，如：<a href="http://shell.xxx/">shell.xxx</a> 查看是否上传成功，成功为黑名单，失败为白名单</p><h2 id="黑名单"><a href="#黑名单" class="headerlink" title="黑名单"></a>黑名单</h2><ul><li>特殊后缀</li><li>大小写绕过</li><li>双重后缀</li><li>空格绕过</li><li>点号绕过</li><li>特殊字符::$DATA绕过</li><li>加点空格点<ul><li>上传shell.php 然后用bp改后缀加点空格点（即文件名为<code>shell.php. .</code>）</li><li>PS：补充知识：deldot()函数从后向前检测，当检测到末尾的第一个点时会继续它的检测，但是遇到空格会停下来</li></ul></li></ul><h2 id="白名单"><a href="#白名单" class="headerlink" title="白名单"></a>白名单</h2><ul><li><p>%00截断</p><blockquote><p>00截断原理是因为白名单判断的时候是判断后缀，在进行路径拼接的时候用的其他值，然后在进行move_uploaded_file的时候，这个函数读取到hex值为00的字符，认为读取结束，出现00截断。</p></blockquote><ul><li>get %00截断</li><li>post 00截断<ul><li>抓包，在hex处修改</li></ul></li></ul></li><li><p>图片马  PS：需文件包含漏洞配合</p></li></ul>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 安全 </tag>
+            
+            <tag> 笔记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>系统敏感文件</title>
       <link href="/2023/04/13/%E7%B3%BB%E7%BB%9F%E6%95%8F%E6%84%9F%E6%96%87%E4%BB%B6/"/>
       <url>/2023/04/13/%E7%B3%BB%E7%BB%9F%E6%95%8F%E6%84%9F%E6%96%87%E4%BB%B6/</url>
@@ -242,7 +263,7 @@
       
         <tags>
             
-            <tag> python 爬虫 </tag>
+            <tag> 爬虫 </tag>
             
         </tags>
       
@@ -261,7 +282,7 @@
       
         <tags>
             
-            <tag> python 爬虫 </tag>
+            <tag> 爬虫 </tag>
             
         </tags>
       
